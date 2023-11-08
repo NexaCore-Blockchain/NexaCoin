@@ -1,3 +1,54 @@
+./komodod -ac_name=NexaCore -ac_supply=70000000 -ac_reward=700000000 -ac_halving=525600 -ac_staked=50 -ac_decay=75000000 pubkey=022f7a698561d657cf22e8a23996658e98a42ef0c096186f9e12add720fcbdfbc6 &
+
+/komodod -ac_name=NexaCore -ac_supply=70000000 -ac_reward=700000000 -ac_halving=525600 -ac_staked=50 -ac_decay=75000000
+./komodo-cli -ac_name=NexaCore getnewaddress 
+./komodo-cli -ac_name=NexaCore validateaddress RH8WxHWa3X7uJQRpziWwUxT11sVvTQxEbY
+./komodo-cli -ac_name=NexaCore setgenerate true 1
+./komodo-cli -ac_name=NexaCore addnode 192.168.100.20 add
+./komodo-cli -ac_name=NexaCore addnode 192.168.100.19 add 
+./komodo-cli -ac_name=NexaCore getinfo
+./komodo-cli -ac_name=NexaCore stop
+./komodo-cli -ac_name=NexaCoregetinfo | grep connections
+./komodo-cli -ac_name=HELLOWORLD sendtoaddress Address_from_the_first_node 10
+./komodo-cli -ac_name=HELLOWORLD getreceivedbyaddress <insert address_from_the_first_node> 0
+# The 0 argument in the above command instructs the daemon to include the unconfirmed coin balance in the response
+
+
+
+
+
+
+Nexacore-explorer-start.sh
+./komodo-cli -ac_name=NexaCore getaddressbalance
+getaddressbalance
+ ./komodo-cli -ac_name=NexaCore z_getnewaddress
+zs1zsrwy5p6q479n9g3p8q69tt2zrs7mardc82ncvf080x7dkqexrtpsrgayhwcs54n66ua270td0t
+your Smart Chain will have all the power of Bitcoin securing your blockchain's history, with the zero-knowledge privacy of the Zcash parameters pre-installed, and all of the interoperability, scalability, and more that Komodo adds to your development experience.
+
+
+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
+
+"relayfee": 0.00000100
+  "isvalid": true,
+  "address": "RH8WxHWa3X7uJQRpziWwUxT11sVvTQxEbY",
+  "scriptPubKey": "76a914561d04d9e778649f0c76db77cf3c87eb1a2772d688ac",
+  "segid": 46,
+  "ismine": true,
+  "iswatchonly": false,
+  "isscript": false,
+  "pubkey": "022f7a698561d657cf22e8a23996658e98a42ef0c096186f9e12add720fcbdfbc6",
+  "iscompressed": true,
+  "account": ""
+
+>>>>>>>>>> NexaCore: p2p.33553 rpc.33554 magic.ddd68541 3721823553 70000000 coin
+nano launch_NexaCore.sh
+sudo ufw allow 33553
+chmod +x launch_NexaCore.sh
+
+
+
+
+
 MIT License
 
 Copyright (c) 2023 NexaCore-Blockchain
