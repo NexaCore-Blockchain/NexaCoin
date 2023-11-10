@@ -1,11 +1,15 @@
-./komodod -ac_name=NexaCore -ac_supply=70000000 -ac_reward=700000000 -ac_halving=525600 -ac_staked=50 -ac_decay=75000000 pubkey=022f7a698561d657cf22e8a23996658e98a42ef0c096186f9e12add720fcbdfbc6 &
-
+./komodod -ac_name=NexaCore -ac_supply=70000000 -ac_reward=700000000 -ac_halving=525600 -ac_staked=50 -ac_decay=75000000 pubkey=022f7a698561d657cf22e8a23996658e98a42ef0c096186f9e12add720fcbdfbc6  -gen -genproclimit=1 &
+20.57.41.254
 /komodod -ac_name=NexaCore -ac_supply=70000000 -ac_reward=700000000 -ac_halving=525600 -ac_staked=50 -ac_decay=75000000
 ./komodo-cli -ac_name=NexaCore getnewaddress 
 ./komodo-cli -ac_name=NexaCore validateaddress RH8WxHWa3X7uJQRpziWwUxT11sVvTQxEbY
 ./komodo-cli -ac_name=NexaCore setgenerate true 1
 ./komodo-cli -ac_name=NexaCore addnode 192.168.100.20 add
 ./komodo-cli -ac_name=NexaCore addnode 192.168.100.19 add 
+./komodo-cli -ac_name=NexaCore addnode 192.168.100.21 add 
+./komodo-cli -ac_name=NexaCore addnode 20.57.41.254 add 
+
+
 ./komodo-cli -ac_name=NexaCore getinfo
 ./komodo-cli -ac_name=NexaCore stop
 ./komodo-cli -ac_name=NexaCoregetinfo | grep connections
