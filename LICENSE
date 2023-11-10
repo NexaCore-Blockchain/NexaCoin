@@ -13,7 +13,17 @@
 ./komodo-cli -ac_name=HELLOWORLD getreceivedbyaddress <insert address_from_the_first_node> 0
 # The 0 argument in the above command instructs the daemon to include the unconfirmed coin balance in the response
 
-
+rpcuser=user3756798547
+rpcpassword=passe97db5751cc42a9c6c0e8a577cfcea6cc66008e2f9eb369a7b0226a26ed8d93594
+rpcport=33554
+server=1
+txindex=1
+rpcworkqueue=256
+rpcallowip=127.0.0.1
+rpcbind=127.0.0.1
+pubkey=022f7a698561d657cf22e8a23996658e98a42ef0c096186f9e12add720fcbdfbc6
+addnode=192.168.100.20
+addnode=192.168.100.19
 
 
 
