@@ -1,0 +1,30 @@
+
+./komodo-cli -ac_name=NexaCore validateaddress RNNCGCEyu5b87EjsbUbBpoAsnHJ7MdYoxJ
+"isvalid": true,
+  "address": "RNNCGCEyu5b87EjsbUbBpoAsnHJ7MdYoxJ",
+  "scriptPubKey": "76a9148f8bde625678b7b8f58c22008742142ccb6b6d1288ac",
+  "segid": 25,
+  "ismine": true,
+  "iswatchonly": false,
+  "isscript": false,
+  "pubkey": "032ca6a005ad31362ec7f10a9e63dd0326b57e062f30b60f570e17edf46d954988",
+  "iscompressed": true,
+  "account": ""
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

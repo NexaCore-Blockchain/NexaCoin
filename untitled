@@ -1,0 +1,35 @@
+
+
+root@myguest:/home/dtr/komodo_0.8.0_linux# nano launch_NexaCore.sh root@myguest:/home/dtr/komodo_0.8.0_linux# chmod +x launch_NexaCore.sh root@myguest:/home/dtr/komodo_0.8.0_linux# sudo ufw allow 23162 
+./komodo-cli -ac_name=NexaCore addnode 10.0.2.15 add ./komodo-cli -ac_name=NexaCore tokenlist 
+./komodo-cli -ac_name=NexaCore setgenerate true 1 Execute NexaCore-explorer-start.sh to start the explorer [ * ] Visit http://197.205.23.85:23166 from another computer to access the explorer after starting it [ * ] Visit http://localhost:23166 on your computer to access the explorer after starting it Patching the installation to display notarization data
+
+./komodod -ac_name=NexaCore -ac_supply=70000000 -ac_reward=700000000 -ac_halving=525600 &
+
+root@myguest:/home/dtr/komodo_0.8.0_linux# ASSETCHAINS_SUPPLY 70000000 perc 0.0000% ac_pub=[000000...] acsize.0 ERA0: end.0 reward.700000000 halving.525600 decay.0 notarypay.0 extralen.73 before disable bits MAX_MONEY 7735844409432446 77358444.09432445 00000000000000000000000000000000000000000000000000000000000000000000000000000000000027b92900000000200508000000000000000000000000000000000000000000 extralen.73 crc0.1d6afcb2 Created (/root/.komodo/NexaCore/NexaCore.conf)
+
+                                        NexaCore: p2p.23162 rpc.23163 magic.6433f312 1681126162 70000000 coins
+
+call komodo_args.(./komodod) NOTARY_PUBKEY.() initialized NexaCore at 1698880148 nMaxConnections 384 finished loading blocks NexaCore fAddressIndex.0/0 fSpentIndex.0/0 height.0 slowflag.1 possible.1 cmp.0 nLocalServices 5 0, 0
+
+./komodo-cli -ac_name=NexaCore getnewaddress 
+./komodo-cli -ac_name=NexaCore validateaddress RH8WxHWa3X7uJQRpziWwUxT11sVvTQxEbY
+
+{ "isvalid": true, "address": "RK4pMvoTFeFvXms8ts3bCWKG88bnEaVfgk", "scriptPubKey": "76a9146b5a2349169beb459c35f3d88a372afe22ccc35188ac", "segid": 9, "ismine": true, "iswatchonly": false, "isscript": false, "pubkey": "02571462b0927213239552924afbf9006bf1c52621028c21fe33f491f527f3b9ac", "iscompressed": true, "account": "" }
+
+nano launch_NexaCore.sh
+
+./komodod -ac_name=NexaCore -ac_supply=70000000 -ac_reward=700000000 -ac_halving=525600 -pubkey=02571462b0927213239552924afbf9006bf1c52621028c21fe33f491f527f3b9ac
+
+./NexaCore-explorer-start.sh
+
+./komodo-cli -ac_name=NexaCore getinfo 
+./komodo
+./komodo-cli -ac_name= stop
+"pubkey": "02571462b0927213239552924afbf9006bf1c52621028c21fe33f491f527f3b9ac", 
+./komodo-cli -ac_name=NexaCore stop 
+
+rm -rf komodo-install-explorer
+tail -f ~/.komodo/NexaCore/debug.log
+
+
