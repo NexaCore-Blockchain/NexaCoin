@@ -1,0 +1,41 @@
+./komodod -ac_name=NexaCore -ac_supply=70000000 -ac_reward=700000000 -ac_halving=525600 -ac_staked=50 -ac_decay=75000000 -pubkey=022f7a698561d657cf22e8a23996658e98a42ef0c096186f9e12add720fcbdfbc6 &
+
+/komodod -ac_name=NexaCore -ac_supply=70000000 -ac_reward=700000000 -ac_halving=525600 -ac_staked=50 -ac_decay=75000000 &
+./komodo-cli -ac_name=NexaCore getnewaddress 
+./komodo-cli -ac_name=NexaCore validateaddress RStMjHXEEmwafzVYxCfZiarwc6FAUjzVGM
+./komodo-cli -ac_name=NexaCore setgenerate true 1
+./komodo-cli -ac_name=NexaCore addnode 192.168.100.19 add
+./komodo-cli -ac_name=NexaCore addnode 192.168.100.20 add 
+./komodo-cli -ac_name=NexaCore getinfo
+./komodo-cli -ac_name=NexaCore stop
+{
+  "isvalid": true,
+  "address": "RStMjHXEEmwafzVYxCfZiarwc6FAUjzVGM",
+  "scriptPubKey": "76a914c120c0df037eb5a83cb617fe5e1d7ccfd9c34a3788ac",
+  "segid": 62,
+  "ismine": true,
+  "iswatchonly": false,
+  "isscript": false,
+  "pubkey": "03f429a20c4084432565c0a44da232de89492c6a95e6bc219c22b64f4ca9f1491c",
+  "iscompressed": true,
+  "account": ""
+}
+dtr
+
+
+"relayfee": 0.00000100
+  "isvalid": true,
+  "address": "RH8WxHWa3X7uJQRpziWwUxT11sVvTQxEbY",
+  "scriptPubKey": "76a914561d04d9e778649f0c76db77cf3c87eb1a2772d688ac",
+  "segid": 46,
+  "ismine": true,
+  "iswatchonly": false,
+  "isscript": false,
+  "pubkey": "022f7a698561d657cf22e8a23996658e98a42ef0c096186f9e12add720fcbdfbc6",
+  "iscompressed": true,
+  "account": ""
+
+>>>>>>>>>> NexaCore: p2p.33553 rpc.33554 magic.ddd68541 3721823553 70000000 coin
+nano launch_NexaCore.sh
+sudo ufw allow 33553
+chmod +x launch_NexaCore.sh
