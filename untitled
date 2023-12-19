@@ -33,3 +33,24 @@ rm -rf komodo-install-explorer
 tail -f ~/.komodo/NexaCore/debug.log
 
 
+git clone https://github.com/NexaCore-Blockchain/NexaCoin
+cd NexaCoin
+chmod +x fetch-params.sh
+chmod +x launch_NexaCore.sh
+chmod +x komodod
+chmod +x komodo-cli 
+chmod +x komodo-tx
+chmod +x wallet-utility
+chmod +x NexaCore_7776
+chmod +x launch_NexaCore.sh
+
+./komodod -ac_name=NexaCore -ac_supply=70000000 -ac_reward=700000000 -ac_halving=525600 -ac_staked=50 -ac_decay=75000000
+./komodo-cli -ac_name=NexaCore addnode 10.88.0.3 add
+
+./komodo-cli -ac_name=NexaCore getnewaddress 
+./komodo-cli -ac_name=NexaCore validateaddress RJ6nRgCWaeDnUuMzt4DJrJR9GfgHtitniK
+./komodo-cli -ac_name=NexaCore setgenerate true 1
+./komodo-cli -ac_name=NexaCore addnode 10.88.0.3 add
+./komodo-cli -ac_name=NexaCore addnode 172.17.0.1 add 
+./komodo-cli -ac_name=NexaCore getinfo
+./komodo-cli -ac_name=NexaCore stop
